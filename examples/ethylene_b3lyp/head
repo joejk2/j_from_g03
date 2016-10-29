@@ -1,0 +1,7 @@
+%nprocshared=2
+%mem=1GB
+#b3lyp/6-31+g* scf=tight nosymm iop(3/33=1)
+
+9_11_07
+ 
+0 1
