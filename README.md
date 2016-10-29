@@ -1,13 +1,13 @@
 _Adapted from code by J.Kirkpatrick to deal with GAMESS-UK output by Joe Kwiatkowski on 12/09/07_
 
-Summary
+SUMMARY
 ====================================================================================================
 Calculate the transfer integral between two molecules based on the output of Gaussian calculations.
 From [page 42 of my PhD thesis](http://docs.google.com/viewer?a=v&pid=sites&srcid=am9lamsuY29tfGpvZS1rd2lhdGtvd3NraXxneDo1YmQ5NDc0NjkyNDMyYWZh):
 
 ![Transfer Integral](J.png)
 
-Instructions
+INSTRUCTIONS
 ====================================================================================================
 
 Compile
@@ -15,9 +15,9 @@ Compile
 Compile with make.  This puts 'rewrite_S_Phi_E.x' and 'get_J.m' in ~/bin
 
 Run 
-====================================================================================================
+--------------------------------------------------
 
-## Quantum calculations
+### Quantum calculations
 
 Run three Gaussian jobs:
 
@@ -34,7 +34,7 @@ Typical input to Gaussian jobs:
 		iop(3/33=1) forces output of the overlap matrix in the
 		xxx_x.log file
 
-## Calculate transfer integral
+### Calculate transfer integral
 Run **rewrite\_S\_Phi\_E.x** with the prefix to Gaussian calculations (1), (2) and (3). 
 
 	Note, need to do so in this order!  This program expects to find 3 log files and 3 pun files.
